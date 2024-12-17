@@ -1,0 +1,221 @@
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Raleway', sans-serif;
+    /*position: fixed; /*this is used to keep the nav bar fixed at top of scereen every time **/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.1s;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #eaeaea;
+    color: #6c5ce7;
+}
+
+/* Page-Specific Sidebar Styles */
+.page-sidebar {
+  position: fixed;
+  top: 30%; /* Adjusted to prevent overlap with top navbar */
+  left: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 100;
+  width: 200px;
+}
+
+.page-sidebar a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-sidebar a:hover {
+  background-color: #eaeaea;
+  color: #6c5ce7;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Content Styling */
+.content {
+  margin-top: 100px; /* Added margin to prevent content from hiding under navbar */
+  margin-left: 250px; /* Space for sidebar */
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .page-sidebar {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index:-5;
+    opacity:0;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.blog-showcase {
+  padding: 60px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blog-title {
+  margin-top : 7%;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.blog-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  border-color: #6c5ce7;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #4834d4;
+  border-color: #4834d4;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-description {
+    font-size: 1rem;
+  }
+}
+/* imported */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #f5f5f5; /* Light gray background for a soft look */
+  color: #333;
+  line-height: 1.5;
+  overflow: hidden; /* Ensures that there's no scroll bar if animations are not properly handled */
+  overflow-y: auto; /* these the one due to which we are able to scroll through else we have to use th side navigtaion*/
+  text-align: center; /* Centering content */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 40px 0;
+  text-align: center;
+  color: #333; /* Dark gray text for readability */
+  font-family: 'Raleway', sans-serif;
+  border-top: 1px solid #ccc; /* Subtle divider */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links, .footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links ul, .footer-socials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li, .footer-socials li {
+  display: inline-block;
+}
+
+.footer-links a, .footer-socials a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+  color: #777; /* Slight gray on hover */
+}
+
+.footer-socials a {
+  font-size: 18px;
+}
+
+.footer-credit {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777; /* Lighter gray for the copyright notice */
+}
+
+a {
+  text-decoration: none;
+}
+a:hover{text-decoration: none;}
+
+

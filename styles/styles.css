@@ -866,3 +866,14 @@ a:hover{text-decoration: none;}
 }
 
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+      margin: 0; /* No margin for nav links */
+  }
+
+  .footer-content {
+      flex-direction: column; /* Column layout */
+      align-items: center; /* Center items */
+  }
+}
