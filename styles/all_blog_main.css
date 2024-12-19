@@ -30,6 +30,16 @@
     color: #6c5ce7;
 }
 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center; /* Center the text inside the collapsible menu */
+  }
+  .navbar-nav {
+    justify-content: center; /* Center the menu items */
+  }
+}
+
+
 /* Page-Specific Sidebar Styles */
 .page-sidebar {
   position: fixed;
