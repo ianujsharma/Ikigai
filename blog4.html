@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Statement Financial Model</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/blog_styles.css">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Anuj Sharma</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="all_blog">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Page-Specific Sidebar Navigation -->
+  <div class="page-sidebar">
+    
+    <a href="#intro">Introduction</a>
+    <a href="#key-terminology">Key Terminology</a>
+    <a href="#key-analysis">Key Analysis</a>
+    <a href="#summary">Summary</a>
+    <a href="#files">Files</a>
+  </div> 
+
+  <!-- Blog Content -->
+  
+  <div id="home" class="blog-container">
+    <h1 class="blog-title">Portfolio Management Insights: Evaluating Nifty 50 Stocks for Strategic Investment Decisions</h1>
+
+    <div class="blog-content">
+      <h2 id="intro">Introduction</h2>
+      <p>When it comes to portfolio management, the goal is always to optimize returns while managing risks. In this post, we will analyze the daily price movements of 10 prominent Nifty 50 companies over the past month to identify stocks that could potentially enhance a profit in the short term with a diversified investment portfolio.</p>
+
+      <h2 id="key-terminology">Key Terminology</h2>
+      <p>Before diving into the analysis, let’s define a few key terms to help us understand the project:</p>
+      <ul>
+        <li><b>Opening Price</b>: The price at which a stock starts trading for the day.</li>
+        <li><b>Daily High</b>: The highest price reached by a stock during the day.</li>
+        <li><b>Daily Low</b>: The lowest price reached during the day.</li>
+        <li><b>Last Traded Price (LTP)</b>: The most recent price at which the stock was bought or sold.</li>
+      </ul>
+      <p>These metrics will be used to compute several indicators to assess the stocks' short-term potential:</p>
+      <ul>
+        <li><b>High - Open</b>: The difference between the highest price of the day and the opening price.</li>
+        <li><b>Open - Low</b>: The difference between the opening price and the lowest price of the day.</li>
+        <li><b>Intraday Profit</b>: The potential return from a trade based on daily price movements, which also serves as a short-term risk indicator for long-term investment strategies.</li>
+      </ul>
+
+      <h2 id="data">The Data</h2>
+      <p>For this analysis, we will focus on 10 Nifty 50 companies and evaluate their performance over 20 trading days (roughly a month). The data for each stock includes:</p>
+      <ul>
+        <li>Opening Price</li>
+        <li>Daily High</li>
+        <li>Daily Low</li>
+        <li>Last Traded Price (LTP)</li>
+      </ul>
+      <p>These metrics will then be used to calculate:</p>
+      <ul>
+        <li>High - Open</li>
+        <li>Open - Low</li>
+        <li>Intraday Profit</li>
+      </ul>
+
+      <h2 id="key-analysis">Key Analysis</h2>
+      <h3>Criteria for Portfolio Selection</h3>
+      <p>The goal of portfolio management is to build a collection of stocks that offer strong potential for short-term profits. We will assess the price movements of these stocks relative to their opening prices, aiming to identify those that show consistent appreciation and stability. Stocks with greater volatility and unpredictable price fluctuations will be considered higher risk and may not be the best fit for a balanced portfolio.</p>
+
+      <h3>Stocks That We Will Avoid</h3>
+      <p>Based on our analysis, stocks like Wipro, BEL, and PowerGrid showed significant volatility. While their prices did increase over time, the unpredictability of their movements makes them less suitable for short-term investments. These stocks might still have long-term growth potential but should likely be avoided for immediate portfolio gains.</p>
+
+      <h3>Stocks to Favor for Portfolio Growth</h3>
+      <p>On the other hand, stocks like HDFC Life (HDF LIC), ITC, and Coal India demonstrated stable price increases with lower volatility. These stocks showed consistent positive performance with steady price recovery, making them ideal candidates for a long-term, balanced portfolio with reduced short-term risk.</p>
+
+      <h2 id="summary">Summary</h2>
+      <p>In conclusion, this analysis highlights the importance of making informed decisions when selecting stocks for a portfolio. A diversified portfolio benefits from stocks with stable price movements and minimal volatility. While stocks like Wipro, BEL, and PowerGrid may not be ideal for short-term investments due to their volatility, HDFC Life, ITC, and Coal India offer strong growth potential with more predictable returns.</p>
+
+      <p>By integrating real-time data using Python and the yfinance module, we can further enhance our investment strategy and make more data-driven decisions.</p>
+    </div>
+
+    <a id="files" href="blog/blog4/portfolio_return.xlsx" download class="download-button">Download Project Files</a>
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/404_cat_image.jpg" alt="Logo">
+      </div>
+      
+      <div class="footer-socials">
+        <ul>
+          <li><a href="https://linkedin.com" target="_blank" class="linkedin">LinkedIn  </a></li>
+          <li><a href="https://github.com" target="_blank" class="github">GitHub   </a></li>
+          <li><a href="https://twitter.com" target="_blank" class="twitter">Twitter   </a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-credit">&copy; 2024 Anuj Sharma. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
