@@ -125,20 +125,20 @@ window.onload = function () {
   );
 
   // Resume list items animation with stagger on scroll
-  gsap.from(".resume-list li", {
-    opacity: 1,
-    y: 30,
-    stagger: 0.2,
-    duration: 1,
-    delay: 3,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".resume-list", // Trigger when the resume list enters the viewport
-      start: "top 80%",
-      end: "bottom 20%",
-      scrub: true,
-    }
-  });
+  // gsap.from(".resume-list li", {
+  //   opacity: 1,
+  //   y: 30,
+  //   stagger: 0.2,
+  //   duration: 1,
+  //   delay: 3,
+  //   ease: "power2.out",
+  //   scrollTrigger: {
+  //     trigger: ".resume-list", // Trigger when the resume list enters the viewport
+  //     start: "top 80%",
+  //     end: "bottom 20%",
+  //     scrub: true,
+  //   }
+  // });
 };
 
 
